@@ -41,7 +41,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.get('/login', passport.authenticate('discord', { scope: scopes, prompt: prompt }), function(req, res) {});
 app.get('/callback',
-    passport.authenticate('discord', { failureRedirect: '/' }), function(req, res) { res.redirect('https://discordgiris.herokuapp.com') } // auth success
+    passport.authenticate('discord', { failureRedirect: '/' }), function(req, res) { res.redirect('/') } // auth success
 );
 app.get('/logout', function(req, res) {
     req.logout();
