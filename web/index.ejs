@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoşgeldin, <%= discordRequest.user.username %></title>
+</head>
+<body>
+    profil resmin: <img src="<%= pp %>" alt="Profilin amk cocu">
+    adın: <%= discordRequest.user.username %><br>
+    tagın: #<%= discordRequest.user.discriminator %><br>
+    dilin: <%= discordRequest.user.locale %><br>
+    mailin (merak etme public değil): <%= discordRequest.user.email %><br>
+</body>
+</html>
